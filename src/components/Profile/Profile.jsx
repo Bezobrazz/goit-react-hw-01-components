@@ -1,25 +1,29 @@
+import s from './Profile.module.css';
+
 export default function Profile({ username, tag, location, avatar, stats }) {
   return (
-    <div className="profile">
+    <div className={s.card}>
       <div className="description">
-        <img src={avatar} alt="User avatar" className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">{tag}</p>
-        <p className="location">{location}</p>
+        <div className={s.avatarWrapper}>
+          <img src={avatar} alt="User avatar" className={s.avatar} />
+        </div>
+        <h2 className={s.username}>{username}</h2>
+        <p className={s.descrTag}>@{tag}</p>
+        <p className={s.descrLoca}>{location}</p>
       </div>
 
-      <ul className="stats">
-        <li>
+      <ul className={s.statsWrapper}>
+        <li className={s.statsItem}>
           <span className="label">Followers</span>
-          <span className="quantity">{stats.followers}</span>
+          <span className={s.quantity}>{stats.followers}</span>
         </li>
-        <li>
+        <li className={s.statsItem}>
           <span className="label">Views</span>
-          <span className="quantity">{stats.views}</span>
+          <span className={s.quantity}>{stats.views}</span>
         </li>
-        <li>
+        <li className={s.statsItem}>
           <span className="label">Likes</span>
-          <span className="quantity">{stats.likes}</span>
+          <span className={s.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
