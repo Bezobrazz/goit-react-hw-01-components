@@ -15,6 +15,9 @@
   height: 175px;
   background-color: white;
   text-align: center;
+  box-shadow: 2px 3px 7px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 3px 7px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 3px 7px -3px rgba(0, 0, 0, 0.75);
 }
 .title {
   display: block;
