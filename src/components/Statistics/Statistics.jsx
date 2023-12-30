@@ -19,6 +19,7 @@ export default function Statistics({ title, stats }) {
               style={{ backgroundColor: randomColor() }}
             >
               <span className={s.label}>{item.label}</span>
+              <br />
               <span className={s.percentage}>{item.percentage}</span>
             </li>
           ))}

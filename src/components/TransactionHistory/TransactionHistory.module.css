@@ -1,0 +1,36 @@
+.container {
+  padding: 50px 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table {
+  width: 560px;
+  text-align: center;
+  box-shadow: 2px 3px 7px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 3px 7px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 3px 7px -3px rgba(0, 0, 0, 0.75);
+}
+thead {
+  text-transform: uppercase;
+  background-color: #18bcd5;
+  color: white;
+}
+th {
+  padding: 10px 0;
+}
+
+td {
+  padding: 10px 0;
+  background-color: burlywood;
+  color: #b3b5b6;
+  text-transform: capitalize;
+}
+.evenRow {
+  background-color: white;
+}
+.oddRow {
+  background-color: #ecf2f4;
+}
