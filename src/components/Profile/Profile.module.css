@@ -1,8 +1,19 @@
+.cardWrapper {
+  width: 100%;
+  height: 450px;
+  background-color: #e7ecf2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .card {
+  position: relative;
   padding-top: 15px;
-  width: 350px;
-  border-radius: 2px;
+  width: 250px;
+  height: 350px;
+  border-radius: 3px;
   background-color: white;
+  overflow: hidden;
 }
 .avatarWrapper {
   margin: 0 auto;
@@ -10,7 +21,7 @@
   height: 150px;
   border-radius: 50%;
   overflow: hidden;
-  background-color: grey;
+  background-color: #f3f6f9;
   margin-bottom: 10px;
 }
 .avatar {
@@ -20,21 +31,24 @@
 .username {
   text-align: center;
   margin-bottom: 10px;
+  color: rgb(21, 36, 56);
 }
 .descrTag {
   text-align: center;
-  color: gray;
+  color: rgb(172, 181, 191);
   font-size: 13px;
   margin-bottom: 10px;
 }
 .descrLoca {
   text-align: center;
-  color: gray;
+  color: rgb(172, 181, 191);
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 20px;
 }
 .statsWrapper {
+  position: absolute;
+  bottom: 0;
   width: 100%;
   list-style-type: none;
   display: flex;
@@ -42,17 +56,22 @@
   padding: 0;
 }
 .statsItem {
-  padding: 5px;
+  padding: 10px;
   text-align: center;
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: rgb(160, 142, 118);
-  border-right: 1px solid black;
+  background-color: #f3f6f9;
+  border-right: 1px solid #e8edf3;
+  border-top: 1px solid #e8edf3;
   &:last-child {
     border-right: none;
   }
 }
+.label {
+  color: #929fac;
+}
 .quantity {
   font-weight: 700;
+  color: rgb(21, 36, 56);
 }
